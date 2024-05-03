@@ -45,7 +45,7 @@ def write_data(file_name: Any, data: list, writing_type: str) -> None:
 @cli.command()
 def display_balance(data: list) -> None:
     """
-    Функция возвращающая баланс, расходы и доходы
+    Функция для просмотра баланса, расходов и доходов
     """
     total_income = 0
     total_expense = 0
@@ -82,7 +82,7 @@ def add_record(file_name: Any, data: list) -> None:
 @cli.command()
 def edit_record(file_name: Any, data: list) -> None:
     """
-    Функция для изменения данных в data[list]
+    Функция для изменения данных записи
     """
     index = int(input('Введите индекс записи для редактирования: '))
     if 0 <= index < len(data):
