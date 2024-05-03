@@ -55,9 +55,10 @@ def display_balance(data: list) -> None:
         elif record['Категория'] == 'Расход':
             total_expense += int(record['Сумма'])
     balance = total_income - total_expense
-    click.echo('Текущий баланс: {}'.format(balance))
-    click.echo('Доходы: {}'.format(total_income))
-    click.echo('Расходы: {}'.format(total_expense))
+    click.echo('Текущий баланс: {}.\n'
+               'Доходы: {}\n'
+               'Расходы: {}'.format(
+                balance, total_income, total_expense))
 
 
 @click.argument('file_name', default=wallet_file)
@@ -106,7 +107,6 @@ def search_record(data: list) -> None:
     """
     Функция для поиска записей
     """
-
     criterion = input('Введите критерий для поиска ('
                       'Дата/Категория/Сумма/Описание'
                       '): ').title()
