@@ -1,4 +1,4 @@
-Тестовое задание для Effective Mobile на поизицию Python backend developer.
+Тестовое задание для Effective Mobile на позицию Python backend developer.
 
 Для работы со скриптом перейдите в консоли в корень данной папки. Пример: C:\Users\Ultra_Prikol\Desktop\effective-mobile.
 
